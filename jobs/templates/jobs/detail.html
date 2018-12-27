@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html lang="en">
+    {% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Vrushang Desai | Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">My Story</h4>
+              <p class="text-muted">I Loved To Watch Pokemon And Beyblade On Cartoon Network !!</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact Me </h4></h4>
+              <ul class="list-unstyled">
+                <li><a href="https://twitter.com/icodeforme" class="text-white">Follow on Twitter</a></li>
+                <li><a href="https://www.facebook.com/Vrushang.P.Desai" class="text-white">Like on Facebook</a></li>
+                <li><a href="mailto:vrushangapple@gmail.com" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+                <i class="fa fa-laptop" aria-hidden="true">
+                        <strong>Vrushang Desai</strong>
+                </i>
+
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading"><strong> {{ job.title }}</strong></h1>
+          <hr>
+          <img src="{{job.image.url}}" alt="" height="600"width="auto" >
+          <hr>
+
+          <p class="lead text-muted">{{ job.body }}</p>
+      
+          
+          <p>
+                <a href="tel:+917016396408" class="btn btn-primary my-2"><i class="fa fa-phone-square" aria-hidden="true"> Call Me</i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=+917016396408&text=Hi, I contacted you Through your website." class="btn btn-success my-2"><i class="fa fa-whatsapp" aria-hidden="true"> Message Me On WhatsApp</i>
+                </a>
+                <hr>
+                <a href="{% url 'vrushang' %}" class="btn btn-warning my-2"><i class="fa fa-hand-o-left" aria-hidden="true"><strong> Back</strong></i>
+                </a>
+              </p>
+
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p>My First Website &copy; Vrushang Desai</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
